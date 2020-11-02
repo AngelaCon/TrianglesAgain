@@ -1,4 +1,4 @@
-public class Triangle.java {
+public class Triangle {
     private Point v1, v2, v3;
 
     public Triangle(Point a, Point b, Point c) {
@@ -20,7 +20,7 @@ public class Triangle.java {
 
      public double getArea(){
          double semi = this.getPerimeter() / 2;
-         return Math.sqrt(semi*(semi - v1.distanceTo(v2))*(semi - v1.distanceTo(v3))*(semp - v2.distanceTo(v3)));
+         return Math.sqrt(semi*(semi - v1.distanceTo(v2))*(semi - v1.distanceTo(v3))*(semi - v2.distanceTo(v3)));
      }
 
      public String classify(){
